@@ -17,6 +17,8 @@ SortIF sort_if;
 	@DisplayName("The Method isWellSorted() is working")
 	void testIsWellSorted() {
 		assertFalse(sort_if.isWellSorted(new String[]{ "D" , "C", "B", "A" }));
+		assertFalse(sort_if.isWellSorted(new String[]{ "C" , "A" }));
+		assertFalse(sort_if.isWellSorted(new String[]{ "C" , "C", "D", "A" }));
 		assertTrue(sort_if.isWellSorted(new String[]{ "A" , "B", "C", "D" }));
 	}
 }
