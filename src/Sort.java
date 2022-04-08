@@ -20,7 +20,6 @@ public class Sort implements SortIF {
 						}
 					}
 					if(t==0) {
-						System.out.println(a + " " + i);
 						return false;
 					}else {
 						t =0;
