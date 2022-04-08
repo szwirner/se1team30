@@ -20,5 +20,6 @@ SortIF sort_if;
 		assertFalse(sort_if.isWellSorted(new String[]{ "C" , "A" }));
 		assertFalse(sort_if.isWellSorted(new String[]{ "C" , "C", "D", "A" }));
 		assertTrue(sort_if.isWellSorted(new String[]{ "A" , "B", "C", "D" }));
+		assertTrue(sort_if.isWellSorted(new String[]{ "B" , "A", "C", "D" }));
 	}
 }
