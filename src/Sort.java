@@ -10,7 +10,7 @@ public class Sort implements SortIF {
 	
 	@Override
 	public boolean isWellSorted(String[] s) {
-		int t = 0;
+		int t=0;
 		for(int i=0; i<s.length; i++) {
 			for(int a=0;a<ruleset.length; a++) {
 				if(s[i].equals(ruleset[a][1])) {
@@ -19,16 +19,11 @@ public class Sort implements SortIF {
 							t=1;
 						}
 					}
-					if(t==0) {
-						return false;
-					}else {
-						t =0;
-					}
+					if(t==0) return false;
+					t=0;
 				}
 			}
-			
 		}
-				
 		return true;
 	}
 
