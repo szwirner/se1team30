@@ -15,9 +15,7 @@ public class Sort implements SortIF {
 			for(int a=0;a<ruleset.length; a++) {
 				if(s[i].equals(ruleset[a][1])) {
 					for(int b=0;b<i;b++) {
-						if(ruleset[a][0].equals(s[b])) {
-							t=1;
-						}
+						if(ruleset[a][0].equals(s[b])) 	t=1;
 					}
 					if(t==0) return false;
 					t=0;
