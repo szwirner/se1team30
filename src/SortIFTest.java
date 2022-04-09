@@ -21,7 +21,6 @@ class SortIFTest {
 		assertFalse(sort_if.isWellSorted(new String[] { "C", "C", "D", "A" }));
 		assertTrue(sort_if.isWellSorted(new String[] { "A", "B", "C", "D" }));
 		assertTrue(sort_if.isWellSorted(new String[] { "B", "A", "C", "D" }));
-		assertTrue(sort_if.isWellSorted(new String[] { "A", "D" }));
-		assertFalse(sort_if.isWellSorted(new String[] { "D", "A" }));
+		
 	}
 }
