@@ -6,20 +6,22 @@ import org.junit.jupiter.api.Test;
 
 class SortIFTest {
 
-SortIF sort_if;
-	
+	SortIF sort_if;
+
 	@BeforeEach
 	public void setUp() {
-		sort_if = new Sort(new String[][]{{ "A" , "C" }, { "C", "D" }, { "B", "C" }});
+		sort_if = new Sort(new String[][] { { "A", "C" }, { "C", "D" }, { "B", "C" } });
 	}
-	
+
 	@Test
 	@DisplayName("The Method isWellSorted() is working")
 	void testIsWellSorted() {
-		assertFalse(sort_if.isWellSorted(new String[]{ "D" , "C", "B", "A" }));
-		assertFalse(sort_if.isWellSorted(new String[]{ "C" , "A" }));
-		assertFalse(sort_if.isWellSorted(new String[]{ "C" , "C", "D", "A" }));
-		assertTrue(sort_if.isWellSorted(new String[]{ "A" , "B", "C", "D" }));
-		assertTrue(sort_if.isWellSorted(new String[]{ "B" , "A", "C", "D" }));
+		assertFalse(sort_if.isWellSorted(new String[] { "D", "C", "B", "A" }));
+		assertFalse(sort_if.isWellSorted(new String[] { "C", "A" }));
+		assertFalse(sort_if.isWellSorted(new String[] { "C", "C", "D", "A" }));
+		assertTrue(sort_if.isWellSorted(new String[] { "A", "B", "C", "D" }));
+		assertTrue(sort_if.isWellSorted(new String[] { "B", "A", "C", "D" }));
+		assertTrue(sort_if.isWellSorted(new String[] { "A", "D" }));
+		assertFalse(sort_if.isWellSorted(new String[] { "D", "A" }));
 	}
 }
