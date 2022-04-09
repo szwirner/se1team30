@@ -2,7 +2,6 @@ package de.carpark;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
@@ -23,6 +22,7 @@ class CarIFTest {
 	@DisplayName("Variables arrivalTime and number are set correctly.")
 	void testArrive() {
 		c1.arrive();
+		assertNotNull(c1.getArrivalTime());
 	}
 
 	@Test

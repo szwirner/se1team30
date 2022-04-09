@@ -16,7 +16,7 @@ public class Car implements CarIF {
 	
 	@Override
 	public void arrive() {
-		
+		arrivalTime = LocalDateTime.now();
 	}
 	
 	@Override
