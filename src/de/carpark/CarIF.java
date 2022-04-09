@@ -6,6 +6,7 @@ public interface CarIF {
 	void arrive();
 	void depart();
 	LocalDateTime getArrivalTime();
+	int getNumber();
 	
 	
 }

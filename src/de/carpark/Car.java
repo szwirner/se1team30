@@ -3,7 +3,7 @@ package de.carpark;
 import java.time.LocalDateTime;
 
 public class Car implements CarIF {
-	private static int carCount;
+	private static int carCount = 0;
 	private LocalDateTime arrivalTime;
 	private LocalDateTime departureTime;
 	private int price;
@@ -26,6 +26,10 @@ public class Car implements CarIF {
 
 	public LocalDateTime getArrivalTime() {
 		return arrivalTime;
+	}
+	
+	public int getNumber() {
+		return number;
 	}
 
 	public void setArrivalTime(LocalDateTime arrivalTime) {

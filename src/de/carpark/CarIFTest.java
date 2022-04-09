@@ -23,6 +23,13 @@ class CarIFTest {
 	void testArrive() {
 		c1.arrive();
 		assertNotNull(c1.getArrivalTime());
+		assertEquals(1, c1.getNumber());
+		c2.arrive();
+		assertNotNull(c2.getArrivalTime());
+		assertEquals(2, c2.getNumber());
+		c3.arrive();
+		assertNotNull(c3.getArrivalTime());
+		assertEquals(3, c3.getNumber());
 	}
 
 	@Test
